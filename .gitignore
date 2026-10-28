@@ -1,0 +1,40 @@
+# Executables and compiled binaries
+*.exe
+*.dll
+*.pdb
+*.lib
+*.exp
+*.so
+*.dylib
+hoyo-last-play.exe
+
+# Cargo / Rust build artifacts
+target/
+src-tauri/target/
+**/*.rs.bk
+
+# Tauri generated schemas
+src-tauri/gen/schemas/
+**/gen/schemas/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Logs and environment
+*.log
+.env
+.env.*

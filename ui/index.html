@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoyo Activity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="window-frame">
+    <!-- Header / Drag Bar -->
+    <header class="titlebar" data-tauri-drag-region>
+
+      <div class="window-controls" style="margin-left: auto;">
+        <button id="btn-refresh" class="btn-icon" title="Periksa Ulang">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/></svg>
+        </button>
+        <button id="btn-minimize" class="btn-icon" title="Minimalkan">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <button id="btn-close" class="btn-icon btn-close" title="Tutup">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+      <div id="games-container" class="games-list">
+        <!-- Dynamically rendered -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <label class="autostart-toggle" title="Jalankan otomatis saat menyalakan komputer">
+        <input type="checkbox" id="check-autostart" />
+        <span class="checkbox-custom"></span>
+        <span class="toggle-label">Buka saat startup</span>
+      </label>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
